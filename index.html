@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>Genaro Loera</title>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">  
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js'></script>
+</head>
+<body>
+	<div class='center container'>
+		<div id='terra' class='terra'>
+		</div>
+		<br>
+		<div id='about'>
+			<h2>Who am I?</h2>
+			<hr>
+			<p>My name is <span class='pastel_red'>Genaro Loera</span>
+      <p>My main focus is frontend web development and design.</p>
+		</div>
+		<br>
+		<div id='languages'>
+			<h2>What I know?</h2>	
+			<hr>
+			<div>
+				<h3>JavaScript</h3>
+				<h3>HTML and CSS</h3>
+			</div>
+    </div>
+    <script src='js/Terra.js'></script>
+	  <script type='text/javascript'>
+		var clock = new THREE.Clock();
+		//document.body.appendChild( container );
+		var parentElem = document.getElementById('terra');
+		
+		var terrain = new Terrain(5, parentElem);
+		terrain.generate(0.7)
+		var map = terrain.map;
+		
+		console.log(map + ' ' + terrain.size);
+		console.log(map.length);
+
+		console.log('container width: ' + parentElem.offsetWidth);
+		console.log('container height: ' + parentElem.offsetHeight);
+		
+		terrain.draw(map);	
+	 </script> 
+  </body>
+</html>
