@@ -93,7 +93,7 @@ Terrain.prototype.draw = function(map) {
 
 	camera.position.set( 0, -3, 0 ); 
 
-  	var geometry = new THREE.PlaneGeometry( this.size*2, this.size*2, this.max, this.max );
+  	var geometry = new THREE.PlaneGeometry( this.size*2.5, this.size*2.5, this.max, this.max );
   	geometry.dynamic = true;
 
   	var l = geometry.vertices.length;
@@ -113,20 +113,12 @@ Terrain.prototype.draw = function(map) {
 
   	camera.position.z = this.size * 3;
 
-  	plane.rotation.x = 1.8;
-
-  	/* 3D terrain flying controls
-	var controls = new THREE.FlyControls( camera );
-  	controls.movementSpeed = 50;
-  	controls.domElement = container;
-  	controls.rollSpeed = Math.PI / 24;
-  	controls.autoForward = false;
-  	controls.dragToLook = false;
-	*/
+  	plane.rotation.x = 2;
+	
 
   	var render = function () {
   		requestAnimationFrame( render );
-  	  	plane.rotation.z += 0.003;
+  	  	plane.rotation.z += 0.009;
   	  	//controls.update( clock.getDelta() );
   	  	renderer.render( scene, camera );
   	};

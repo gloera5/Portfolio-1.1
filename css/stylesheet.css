@@ -1,5 +1,5 @@
 body {
-	background-image: url('../assets/images/concrete_seamless.png');
+	background-color: gray;
 }
 
 h1, h2, h3 {
@@ -38,8 +38,4 @@ canvas {
 .container {
     width: 50%;
     max-width: 940px;
-}
-
-.pastel_red {
-	color: #FF6961;
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
   <title>Genaro Loera</title>
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">  
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js'></script>
 </head>
 <body>
@@ -12,13 +12,15 @@
 		</div>
 		<br>
 		<div id='about'>
+      <hr>
 			<h2>Who am I?</h2>
 			<hr>
-			<p>My name is <span class='pastel_red'>Genaro Loera</span>
+      <p>My name is Genaro Loera</p>
       <p>My main focus is frontend web development and design.</p>
 		</div>
 		<br>
 		<div id='languages'>
+      <hr>
 			<h2>What I know?</h2>	
 			<hr>
 			<div>
@@ -26,10 +28,15 @@
 				<h3>HTML and CSS</h3>
 			</div>
     </div>
+    <div id='where'>
+      <hr>
+      <h2>Where I learned?</h2>
+      <hr>
+      <p>I learned through Bloc onling programming bootcamp.</p>
+    </div> 
     <script src='js/Terra.js'></script>
 	  <script type='text/javascript'>
 		var clock = new THREE.Clock();
-		//document.body.appendChild( container );
 		var parentElem = document.getElementById('terra');
 		
 		var terrain = new Terrain(5, parentElem);
