@@ -22,13 +22,13 @@ p {
 
 .terra {
 	height: 150px;
-    width: auto;
+width: auto;
 	position: relative;
 }
 
 .center {
 	margin-left: auto;
-    margin-right: auto;	
+  margin-right: auto;	
 }
 
 canvas {
@@ -38,4 +38,8 @@ canvas {
 .container {
     width: 50%;
     max-width: 940px;
+}
+
+.navbar {
+  
 }
