@@ -1,5 +1,5 @@
 body {
-	background-color: gray;
+	background: grey;
 }
 
 h1, h2, h3 {
@@ -37,22 +37,21 @@ p {
   margin-right: auto;
 }
 
-.about {
-  background-image: url('../Portfolio/assets/images/div-image.1.jpg');
-}
-
-
 canvas {
 	border: 5px solid;
 }
 
 .projects {
-  height: 310px;
+  height: 250px;
 }
 
 .container {
     width: 50%;
     max-width: 940px;
+}
+
+a.btn-block:hover {
+    background-color: green;
 }
 
 h4 {
